@@ -1,11 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Computer Vision in Aviation — In-depth</title>
 </head>
-<body>
-    
+<body style="font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:#f6f8fa; color:#0f1724; line-height:1.6;">
+  <div style="max-width:1000px; margin:28px auto; background: #ffffff; border-radius:12px; box-shadow:0 10px 30px rgba(16,24,40,0.08); overflow:hidden;">
+    <header style="padding:28px 32px; border-bottom:1px solid #eef2f7; display:flex; align-items:center; justify-content:space-between;">
+      <div>
+        <h1 style="margin:0; font-size:22px; letter-spacing:-0.3px;">Computer Vision in Aviation</h1>
+        <p style="margin:6px 0 0 0; color:#334155; font-size:13px;">An in-depth look at how visual AI influences airports, operations, and safety.</p>
+      </div>
+      <nav>
+        <a href="index.html" style="display:inline-block; padding:8px 14px; background:#0b5fff; color:#fff; text-decoration:none; border-radius:8px; font-size:13px;">Back to index.html</a>
+      </nav>
+    </header>
+
+    <main style="padding:28px 32px;">
+      <section style="margin-bottom:22px;">
+        <h2 style="margin:0 0 8px 0; font-size:18px;">Overview</h2>
+        <p style="margin:0; color:#334155;">Computer vision applies machine learning and image-processing algorithms to interpret visual data (images, video, and 3D scans). In the aviation ecosystem — from check-in halls to the airside apron and maintenance hangars — computer vision is maturing into a core technology that improves throughput, safety, and cost-efficiency.</p>
+      </section>
+
+      <section style="margin-bottom:22px;">
+        <h2 style="margin:0 0 8px 0; font-size:18px;">Key Applications in Airports</h2>
+        <ul style="margin:0; padding-left:18px; color:#334155;">
+          <li style="margin-bottom:8px;"><strong>Passenger flow monitoring:</strong> real-time crowd analytics, queue prediction, gate load balancing, and dynamic signage to reduce bottlenecks and improve the passenger experience.</li>
+          <li style="margin-bottom:8px;"><strong>Baggage handling automation:</strong> vision systems for tag reading (OCR), bag tracking, and automated sorting to reduce mishandled luggage and speed up delivery.</li>
+          <li style="margin-bottom:8px;"><strong>Security and biometrics:</strong> touchless identity verification (facial recognition, eGates) to streamline identity checks while integrating with existing credential pipelines.</li>
+          <li style="margin-bottom:8px;"><strong>Aircraft inspection & maintenance:</strong> drones and fixed cameras coupled with CV algorithms to detect surface defects, dents, corrosion, or foreign object debris, aiding faster turnarounds and predictive maintenance.</li>
+          <li style="margin-bottom:8px;"><strong>Operational awareness:</strong> apron monitoring, vehicle tracking, and runway incursion prevention through object detection and tracking networks.</li>
+        </ul>
+      </section>
+
+      <section style="margin-bottom:22px;">
+        <h2 style="margin:0 0 8px 0; font-size:18px;">Technical Methods</h2>
+        <p style="margin:0 0 8px 0; color:#334155;">Common techniques and building blocks:</p>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px;">
+          <div style="background:#fbfdff; padding:12px; border-radius:8px; border:1px solid #eef2f7;">
+            <strong>Object detection & classification</strong>
+            <p style="margin:6px 0 0 0; font-size:13px;">YOLO, Faster R-CNN, and other detectors for people, trolleys, luggage, vehicles, and obstacles.</p>
+          </div>
+          <div style="background:#fbfdff; padding:12px; border-radius:8px; border:1px solid #eef2f7;">
+            <strong>Multi-object tracking</strong>
+            <p style="margin:6px 0 0 0; font-size:13px;">Realtime tracking to measure flows, dwell times, and interactions (SORT, DeepSORT, CV-based trackers).</p>
+          </div>
+          <div style="background:#fbfdff; padding:12px; border-radius:8px; border:1px solid #eef2f7;">
+            <strong>OCR & barcode reading</strong>
+            <p style="margin:6px 0 0 0; font-size:13px;">Automated reading of bag tags, boarding passes, and labels to link physical objects to digital records.</p>
+          </div>
+          <div style="background:#fbfdff; padding:12px; border-radius:8px; border:1px solid #eef2f7;">
+            <strong>3D reconstruction & photogrammetry</strong>
+            <p style="margin:6px 0 0 0; font-size:13px;">High-fidelity scans for structural inspection and precise measurements.</p>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-bottom:22px;">
+        <h2 style="margin:0 0 8px 0; font-size:18px;">Representative Case Studies</h2>
+        <ol style="margin:0; padding-left:18px; color:#334155;">
+          <li style="margin-bottom:10px;"><strong>CLEAR (biometric eGates):</strong> a commercial identity platform using facial biometrics to expedite security lanes and reduce queue times. Implementations combine face matching with boarding-pass validation at eGates.</li>
+          <li style="margin-bottom:10px;"><strong>SITA & IDEMIA (baggage vision):</strong> industry pilots to apply computer vision for baggage recognition and tracking to lower mishandled luggage rates.</li>
+          <li style="margin-bottom:10px;"><strong>Drone-assisted inspections:</strong> automated visual inspections performed by drones and CV analytics to identify surface defects, reducing manual inspection time and enabling predictive maintenance.</li>
+        </ol>
+      </section>
+
+      <section style="margin-bottom:22px;">
+        <h2 style="margin:0 0 8px 0; font-size:18px;">Benefits</h2>
+        <ul style="margin:0; padding-left:18px; color:#334155;">
+          <li>Reduced wait times and improved passenger throughput</li>
+          <li>Lower rates of lost or mishandled baggage</li>
+          <li>Faster, more consistent safety inspections</li>
+          <li>Better situational awareness for operations teams</li>
+          <li>Data-rich inputs to simulation, capacity planning, and optimization tools</li>
+        </ul>
+      </section>
+
+      <section style="margin-bottom:22px;">
+        <h2 style="margin:0 0 8px 0; font-size:18px;">Challenges & Considerations</h2>
+        <p style="margin:0 0 8px 0; color:#334155;">While CV brings clear advantages, practical deployments must address:</p>
+        <ul style="margin:0; padding-left:18px; color:#334155;">
+          <li style="margin-bottom:8px;"><strong>Privacy & legal compliance:</strong> biometric data handling, retention policies, and regional regulations (GDPR, state privacy laws).</li>
+          <li style="margin-bottom:8px;"><strong>Bias and robustness:</strong> model fairness across demographics, lighting, and occlusions.</li>
+          <li style="margin-bottom:8px;"><strong>Latency & edge compute:</strong> real-time applications often require edge inference and careful network design.</li>
+          <li style="margin-bottom:8px;"><strong>Integration complexity:</strong> linking vision outputs to legacy baggage, flight, and identity systems.</li>
+        </ul>
+      </section>
+
+      <section style="margin-bottom:22px;">
+        <h2 style="margin:0 0 8px 0; font-size:18px;">Data & Metrics to Track</h2>
+        <p style="margin:0; color:#334155;">When evaluating CV systems, important KPIs include:</p>
+        <ul style="margin:0; padding-left:18px; color:#334155;">
+          <li>Throughput (people/hour, bags/hour)</li>
+          <li>False accept / false reject rates for biometric matching</li>
+          <li>Misidentification and lost-luggage rate</li>
+          <li>Average queue/dwell times and peak congestion probability</li>
+          <li>Inspection time per aircraft and defect detection recall/precision</li>
+        </ul>
+      </section>
+
+      <section style="margin-bottom:22px;">
+        <h2 style="margin:0 0 8px 0; font-size:18px;">Deployment Roadmap (high level)</h2>
+        <ol style="margin:0; padding-left:18px; color:#334155;">
+          <li style="margin-bottom:8px;">Start with controlled pilots in low-risk zones (e.g., self-bag drop or a single eGate).</li>
+          <li style="margin-bottom:8px;">Collect labeled data, measure model performance in-situ, iterate on edge/infra choices.</li>
+          <li style="margin-bottom:8px;">Integrate with operations dashboards and simulation tools to quantify system-level benefits.</li>
+          <li style="margin-bottom:8px;">Scale gradually with privacy safeguards, audits, and fallback procedures.</li>
+        </ol>
+      </section>
+
+      <section style="margin-bottom:22px;">
+        <h2 style="margin:0 0 8px 0; font-size:18px;">Prompt</h2>
+        <div style="background:#0f1724; color:#e6eef8; padding:12px; border-radius:8px; font-size:13px;">
+          generate a webpage about computer vision and indepth look into how tit can influence the aviation/airports. there sould be enough content for the page to scroll down a bit. Include sources if you can. Make it look professional. 
+
+It must include a method to navigate back to a file called index.html. It must only use HTML and inline CSS.
+
+Include a space to hold the above prompt
+        </div>
+      </section>
+
+      <section style="margin-bottom:22px;">
+        <h2 style="margin:0 0 8px 0; font-size:18px;">Sources (selected)</h2>
+        <p style="margin:0 0 8px 0; color:#334155; font-size:13px;">Below are representative industry and research sources used to shape the content. Follow links for deeper reading.</p>
+        <ul style="margin:0; padding-left:18px; color:#0b5fff;">
+          <li style="margin-bottom:6px;"><a href="https://www.clearme.com/" style="color:#0b5fff; text-decoration:none;">CLEAR — Official site (clearme.com)</a></li>
+          <li style="margin-bottom:6px;"><a href="https://www.sita.aero/" style="color:#0b5fff; text-decoration:none;">SITA — Industry press & solutions (sita.aero)</a></li>
+          <li style="margin-bottom:6px;"><a href="https://www.sciencedirect.com/" style="color:#0b5fff; text-decoration:none;">ScienceDirect — drone and inspection reviews (sciencedirect.com)</a></li>
+          <li style="margin-bottom:6px;"><a href="https://www.tsa.gov/" style="color:#0b5fff; text-decoration:none;">TSA — Facial comparison technology overview (tsa.gov)</a></li>
+          <li style="margin-bottom:6px;"><a href="https://www.mdpi.com/" style="color:#0b5fff; text-decoration:none;">MDPI — passenger flow & simulation literature (mdpi.com)</a></li>
+        </ul>
+      </section>
+
+      <footer style="padding:18px 0 36px 0; color:#94a3b8; font-size:13px; border-top:1px solid #eef2f7;">
+        <div style="max-width:760px; margin:0 auto;">Prepared by you • Generated HTML + inline CSS • Designed for clarity and quick iteration.</div>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>

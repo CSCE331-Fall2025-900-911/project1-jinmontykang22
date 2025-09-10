@@ -6,7 +6,7 @@
 
 body {
     font-family: Roboto;
-    background-color: lightgray;
+    background-color: lightblue;
 }
 
 .page {
@@ -49,7 +49,7 @@ body {
 
         .header_menu_item a:hover {
             /* filler color, replace with more pleasing color */
-            color: rgb(130, 130, 134);
+            color: rgb(66, 174, 210);
         }
     }
 }
@@ -63,6 +63,9 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px 0px 20px 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+    gap: 20px;
     img {
         /* border: 2px solid red; */
         width: 100%;
@@ -78,10 +81,12 @@ body {
 
         display: flex;
         flex-direction: column;
-
         justify-content: center;
         align-items: center;
         font-size: 4vw;
+        background-color: white;
+        border-radius: 15px;
+        height: 100%;
         /* gap: 15px; */
     }
 
@@ -156,11 +161,12 @@ body {
         /* border: 2px solid blue; */
 
         img {
-            width: 100%;
+            width: 90%;
             height: 30%;
-            aspect-ratio: 3/4;
+            /* aspect-ratio: 3/4;
             object-fit: cover;
-            border: 15px solid white;
+            border: 15px solid white; */
+            border-radius: 15px;
         }
     }
 }
@@ -171,6 +177,18 @@ body {
     gap: 10px;
     margin-top: 10%;
     margin-left: 2%;
+    margin-right: 2%;
+
+    background-color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 15px 15px;
+
+    h3 {
+        border-bottom: 2px solid blue;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
 }
 
 .main_card_layout {
@@ -202,6 +220,11 @@ body {
         width: 100%;
         height: 60%;
         border-radius: 15px;
+    }
+
+    a {
+        color: blue;
+        text-decoration: none;
     }
 }
 
