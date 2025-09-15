@@ -54,6 +54,22 @@ body {
     }
 }
 
+.header_menu_item button {
+    background-color: lightblue;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.header_menu_item button:hover {
+    background-color: rgb(66, 174, 210);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+}
+
 .main {
     /* border: 2px solid red; */
     height: 80%;
